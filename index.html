@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NX1T97ETZ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NX1T97ETZ9');
+</script>
+      
+<title>Welcome to Grace's Space</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@700&family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+
+<link rel="icon" type="image/svg+xml" href="media/zwy_favicon.svg">
+
+<script src="https://kit.fontawesome.com/142fba4a90.js" crossorigin="anonymous"></script>
+          
+<style>
+
+body {
+  margin: 0;
+  display:flex; 
+  flex-direction:column;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: white;
+  text-align: center;
+}
+
+
+.full-screen-div {
+    position: relative;
+    min-height: 100vh;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -100;
+}
+
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: -2;
+  }
+  
+  #content {
+  margin: 80px auto 50px auto;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2.5rem;
+  }
+    
+  #text {
+  font-family: 'Caveat', serif;;
+  font-size: 3rem;
+  }
+  
+  #countdown {
+  margin-top: 30px;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 6rem;
+  font-family: 'Big Shoulders Inline Text', cursive;
+  }
+  
+    
+#ytplayer {
+  margin-top: 30px;
+  width: 65%;
+  height: 250px;
+  }
+  
+#lyrics {
+  font-family: 'Caveat', serif;;
+  font-size: 2rem;
+  }  
+
+#logo{
+width: 200px;
+}
+
+.material-icons {
+    vertical-align: middle;
+}      
+
+/*-- spin --*/
+.spin {
+    -webkit-animation: spin 3s linear infinite;
+    animation: spin 3s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*-- spin-reverse --*/
+.spin-reverse {
+    -webkit-animation: spin-reverse 3s linear infinite;
+    animation: spin-reverse 3s linear infinite;
+}
+
+@-webkit-keyframes spin-reverse {
+  0% { -webkit-transform: rotate(360deg); }
+  100% { -webkit-transform: rotate(0deg); }
+}
+
+@keyframes spin-reverse {
+  0% { transform: rotate(360deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+/*-- glow --*/      
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+.footer {
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   height: 2.5rem;     
+   margin-top:auto;
+   background-color: rgba(0, 0, 0, 0.2);
+   font-family: 'Big Shoulders Inline Text', cursive;
+   font-family: 'Libre Barcode 128 Text', cursive;
+   font-size: 2rem;
+   opacity: 0.5;
+   padding: 10px 0px;
+   }
+   
+   
+  
+</style>
+</head>
+
+<body>
+<div class="full-screen-div">
+<video autoplay muted loop playsinline id="myVideo">
+  <source src="media/Ocean - 74888.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<div id="overlay"></div>
+          <div id="content">
+
+<!--
+<audio autoplay loop controls style="display: block; margin-bottom: 20px;">
+  <source src="media/audio.mp3" type="audio/mp3">
+</audio>
+--> 
+                         <center>
+                         <i class="fas fa-fan fa-spin" style="font-size: 10rem; opacity: 0.5;"></i>                         
+                         </center>
+                    
+                    <div id="text">Thank you for visiting <img src="media/kiss.svg" width="50px;"><br/>A quiet space to stop by, <span class="material-icons" style="color:#7a7a52; font-size: 3rem;">coffee</span><br />for calming, listening and thinking...<span class="material-icons" style="color:#992600; font-size: 3rem;">nightlife</span>
+</div>
+                    <div id="countdown" class="glow"></div>
+                    
+                     <iframe id="ytplayer" type="text/html" src="https://www.youtube.com/embed/FlAahnk74x4?autoplay=1&loop=1&modestbranding=1&playsinline=1&color=red&iv_load_policy=3&playlist=FlAahnk74x4" frameborder="0" allow="autoplay; fullscreen"></iframe>
+                    
+                    <p id="lyrics">"Because you have to just go with the flow,<br />
+                    Your life is not your own, <br />with people coming and going all the time. <br />
+                    You get mellow because you have to..."</p>
+                    
+                    
+                    <p><span class="material-icons spin" style="color:#992600; font-size: 2rem;">filter_vintage</span> Created by Grace <span class="material-icons spin-reverse" style="color:#992600; font-size: 2rem;">filter_vintage</span></p>
+                    
+                    <img id="logo" src="media/zwy.svg" />
+                    
+                    
+          </div>
+          
+          <div class="footer">Almost before we knew it, we had left the ground.</div>
+</div>
+<script>
+var countDownDate = new Date("Jan 01, 2022 00:00:00").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  
+  document.getElementById("countdown").innerHTML = "Wishing a Bright New Year" + "<br />" + days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+   
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "HAPPY NEW YEAR 2022 :)";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
